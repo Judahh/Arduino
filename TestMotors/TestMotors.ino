@@ -3,14 +3,14 @@
 #include <math.h>
 
 //Definicoes pinos Arduino ligados a entrada da Ponte H
-int const motorNegativeLeftPin = 2;
-int const motorPositiveLeftPin = 3;
-int const motorPositiveRightPin = 5;
-int const motorNegativeRightPin = 4;
+int const motorNegativeLeftPin = 3;
+int const motorPositiveLeftPin = 2;
+int const motorPositiveRightPin = 4;
+int const motorNegativeRightPin = 5;
 int const motorSpeedRightPin = 10;
 int const motorSpeedLeftPin = 9;
 
-float intensityPercentage = 20;
+float intensityPercentage = 70;
 int percentageMax = 100;
 int intensityMax = 255;
 
@@ -39,7 +39,7 @@ void demoOne()
 //  analogWrite(motorSpeedLeftPin, 200);
 //  delay(2000);
 
-  motor.runForward();
+  motor.turnRight();
 }
 
 void loop() {
